@@ -42,6 +42,7 @@
     margin: 25px 0;
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
 }
 
 /* styling for input and button, this is for div */
@@ -179,3 +180,51 @@
     color: black;
 }
 /* ++++++++++++++=============================+++++++++++++++++++++++++ */
+
+/* ==================mediaquery================ */
+@media only screen and (max-width: 625px) {
+    #reEnterName {
+        padding: 5px 5px;
+        font-size: 0.7rem;
+        position: absolute;
+        /* top: 17px; */
+        right: 10px;
+    }
+    .hide{
+        /* background: red; */
+        font-size: 1.5rem;
+    }
+    .input-text-btn{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .input-text-btn input {
+        border: 1px solid #ccc;
+        width: 80%;
+    }
+    .input-text-btn button {
+        width: 80%;
+    }
+    .topic {
+        /* border: 2px solid rgb(0, 0, 0); */
+        /* background-color: rgb(222, 37, 204); */
+        margin: 15px auto;
+        padding: 5px;
+        height: 85%;
+        gap: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .choiceClass {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .hide{
+        /* background: rgb(7, 99, 16); */
+        text-align: center;
+    }
+}

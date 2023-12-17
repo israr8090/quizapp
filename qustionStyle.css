@@ -44,7 +44,7 @@
 .returnHome:hover {
     background: rgb(245, 216, 216);
     border: 1px solid black;
-    color: black;  
+    color: black;
 }
 
 /* div for showing only timer(left) and score(right)  */
@@ -209,4 +209,122 @@
 /* ==========//////??????????? */
 .container1 {
     display: none;
+}
+
+/* ==================mediaquery================ */
+@media only screen and (max-width: 700px) {
+    .header {
+        /* border: 1px solid black; */
+        /* background: rgb(205, 50, 104); */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+        margin: 5px;
+    }
+
+    .returnHome {
+        position: static;
+    }
+
+    .scoreTimer {
+        /* border: 1px solid black; */
+        /* background: rgb(205, 50, 192); */
+        font-size: 1.5rem;
+        height: 8%;
+    }
+
+    .timer {
+        border: 1px solid rgb(93, 2, 2);
+        background: rgb(241, 175, 184);
+        border-radius: 40%;
+        width: 18%;
+        height: 66%;
+        float: left;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .score {
+        float: right;
+        margin-right: 20px;
+        margin-top: 9px;
+        font-size: 1.5rem;
+    }
+
+    .question {
+        border: 2px solid rgb(0, 0, 0);
+        background-color: rgb(215, 205, 228);
+        border-radius: 10px;
+        margin: 5px 20px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+
+    .question p {
+        /* border: 3px solid rgb(69, 68, 68); */
+        /* background-color: rgb(238, 234, 243); */
+        border-radius: 10px;
+        padding: 0px 20px;
+        font-size: 1rem;
+        text-align: justify;
+        /* font-weight: 550; */
+        /* height: 223px; */
+    }
+    .question-section{
+        position: relative;
+    }
+    .qCount {
+        width: 60px;
+        height: 60px;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -26px;
+        left: 41%;
+        z-index: 1;
+    }
+
+    .option {
+        /* border: 2px solid rgb(0, 0, 0); */
+        /* background-color: rgb(163, 131, 109); */
+        margin: 15px 20px;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .choiceClass {
+        background-color: rgb(114, 212, 215);
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 8px;
+        width: 95%;
+        margin: 14px 10px 3px;
+        padding: 6px;
+        font-size: 1rem;
+        /* font-weight: 600; */
+        cursor: pointer;
+    }
+    .Nextbtn {
+        /* background-color: rgb(209, 42, 0); */
+        /* border: 1px solid rgb(0, 0, 0); */
+        margin: 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .NextOther {
+        margin: 5px 20px;
+        padding: 7px 90px;
+        font-size: 1.1rem;
+    }
 }
