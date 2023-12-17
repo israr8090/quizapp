@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="qustionStyle.css">  
+    <link rel="stylesheet" href="resultStyle.css">
+</head>
+<body>
+    <!-- created a container which conatain all div and all contents -->
+    <div class="container">
+
+        <!-- created a header for showing only subject topic on center-top -->
+        <div class="header">
+            <button id="retunIndexPage" class="returnHome">Home</button>
+            <h1 id="questionSelect">Pipes And Cistern</h1>
+        </div>
+        <!-- created score and timer div which have timer(left) and score(right)  -->
+        <div class="scoreTimer">
+            <div class="timer"><p class="timer-count">00:00</p></div>
+            <div class="score">Score: 0</div>
+        </div>
+
+        <!-- created a dev which have (question count div), (question div), (option div) and (next button)  -->
+        <div class="question-section"> 
+            <!-- (question count div) -->
+            <div class="questionCount"><h1 class="qCount"></h1></div>
+            <!-- (question div) -->
+            <div class="question">
+                <!-- here inseted content from js which is qustions -->
+               <p id="ques"></p>
+            </div>
+            <!-- (option div) -->
+            <div class="option">
+                <!-- here inseted content from js which is button tag and class -->
+            </div>
+
+            <!-- (next button) -->
+            <div class="Nextbtn">
+                <button class="NextOther">Next Question</button>
+            </div> 
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="header1">
+            <h1>Quiz Result</h1>
+        </div>
+        <div class="quizReport">
+            <h2 id="showNameInReport" class="quizReport-h2">Your Result is :</h2> 
+            <h2 id="timeTakenDisplay" class="quizReport-h2"></h2>
+            <h2 id="totalQuestion" class="quizReport-h2"></h2>
+            <h2 id="totalAttemtedQuestion" class="quizReport-h2">Attempt : 00</h2>
+            <h2 id="correctAns" class="quizReport-h2">Correct : 00</h2>
+            <h2 id="totalWrongAnswer" class="quizReport-h2">Wrong : 00</h2>
+            <h2 id="percentage" class="quizReport-h2">Percentage : 00%</h2>
+        </div>
+        <div class="btn">
+            <button id="startAgain" class="btn-button">Start Again</button>
+            <button id="goToHome" class="btn-button">Go To Home</button>
+        </div>
+    </div>
+    
+    <script src="age.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* for body tag all this css applicable */
+.container {
+    /* border: 2px solid #d10505; */
+    /* background: yellowgreen; */
+    background: #faf7f7;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* --------------------This is first section--for= (user-details-section)--------------- */
+.user-details-section {
+    /* border: 2px solid #dd0202; */
+    /* background: rgb(96, 39, 146); */
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* styling for Hello User! */
+.user-details-section h1 {
+    margin-bottom: -20px;
+    font-size: 3rem;
+    color: rgb(66, 188, 232);
+}
+
+/* styling for witch showing Enter your name----- */
+.user-details-section p {
+    margin: 25px 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* styling for input and button, this is for div */
+.input-text-btn {
+    width: 90%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling for only input tag witch contain User name */
+.input-text-btn input {
+    border: 1px solid #ccc;
+    width: 40%;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin: 15px;
+    padding: 10px 30px;
+}
+
+/* styling for hover effect on input tag */
+.input-text-btn input:hover {
+    border: 0.5px solid #5c5a5a;
+    background-color: #ccc;
+}
+
+/* styling for button only that in Enter-------- */
+.input-text-btn button {
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 6px 30px;
+    background-color: rgb(74, 129, 149);
+    color: #000000;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 550;
+}
+
+/* styling for Enter button hover effect */
+.input-text-btn button:hover {
+    border: 2px solid rgb(107, 107, 107);
+    background-color: rgb(8, 47, 61);
+    color: #f5eded;
+}
+
+/*-------------- This is second section--for= (select-category-section)-------------- */
+.select-category-section {
+    /* background: rgb(194, 153, 153); */
+    /* border: 2px solid #1409b3; */
+    height: 45%;
+    padding: 5px;
+    display: none;
+}
+
+/* styling for Select Category text */
+.select-category-section h1 {
+    /* background: rgb(129, 50, 50); */
+    /* border: 2px solid #1409b3; */
+    text-align: center;
+}
+
+/* styling topic div witch have 4 option button */
+.topic {
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* background-color: rgb(222, 37, 204); */
+    margin: 15px auto;
+    padding: 5px;
+    height: 62%;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    gap: 30% 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling for option buttons */
+.choiceClass {
+    background-color: darkturquoise;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    width: 130%;
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* styling for appling hover effect on option button */
+.choiceClass:hover {
+    background-color: rgb(12, 109, 120);
+    color: wheat;
+}
+
+/* styling for appling selected button  */
+.choiceClass.selected {
+    background-color: rgb(64, 89, 231);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+}
+
+/* ====Styling for showing user name and some text when click Enter button===== */
+.showusername {
+    /* background: red; */
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 10px 0px 8px;
+    display: none;
+}
+
+/* stying for showing user name when entering enter */
+.showusername h2 {
+    /* background: rgb(106, 171, 88); */
+    /* border: 1px solid black; */
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* styling for reEnter Name shown when clicked Enter */
+#reEnterName {
+    background: rgb(8, 8, 8);
+    border: 1px solid rgb(232, 227, 227);
+    color: rgb(187, 179, 179);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    float: right;
+    margin-top: -95px;
+}
+
+#reEnterName:hover {
+    background: rgb(248, 75, 59);
+    border: 1px solid black;
+    color: black;
+}
+/* ++++++++++++++=============================+++++++++++++++++++++++++ */

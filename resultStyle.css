@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container1 {
+    border: 1px solid black;
+    background: linear-gradient(20deg, rgb(188, 121, 121), rgb(170, 243, 170), rgb(174, 174, 61));
+    height: 100vh;
+}
+
+.header1 {
+    background: rgb(229, 214, 204);
+    border: 1px solid rgb(192, 185, 185);
+    border-radius: 18px;
+    width: 25%;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 1.5rem;
+}
+
+.quizReport {
+    background: rgb(226, 239, 238);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.quizReport-h2 {
+    padding: 10px
+}
+
+.btn {
+    /* border: 1px solid black; */
+    /* background: rgb(50, 63, 205); */
+    width: 100%;
+    margin: 20px auto 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-button {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(77, 100, 191);
+    color: white;
+    padding: 10px 85px;
+    margin: 2px 20px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-button:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: rgb(239, 227, 227);
+    color: rgb(32, 16, 16);
+   
+}

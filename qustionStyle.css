@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* all div have in container */
+.container {
+    /* border: 1px solid black; */
+    /* background: yellowgreen; */
+    background: rgb(243, 241, 241);
+    width: 100%;
+    height: 100vh;
+    /* display: none; */
+}
+
+/* styling header where show question topic name */
+.header {
+    /* border: 1px solid black; */
+    /* background: rgb(205, 50, 104); */
+    text-align: center;
+    margin: 0px auto;
+    font-size: 1.5rem;
+}
+
+/* styling retunHome button witch is redirect to index.html */
+.returnHome {
+    background: rgb(134, 131, 131);
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    padding: 5px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* appling hover effect on returnHome button */
+.returnHome:hover {
+    background: rgb(245, 216, 216);
+    border: 1px solid black;
+    color: black;  
+}
+
+/* div for showing only timer(left) and score(right)  */
+.scoreTimer {
+    /* border: 1px solid black; */
+    /* background: rgb(205, 50, 192); */
+    font-size: 1.5rem;
+    height: 12%;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+/* styling for timer block only not content */
+.timer {
+    border: 1px solid rgb(93, 2, 2);
+    background: rgb(241, 175, 184);
+    border-radius: 40%;
+    width: 7%;
+    height: 60%;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/* styling for timer block content */
+.timer-count {
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling for score content only */
+.score {
+    float: right;
+    margin-right: 40px;
+    margin-top: 5px;
+    font-size: 2rem;
+}
+
+/* seleting for heightlight question and choice option for styling only for debuging */
+.question-section {
+    /* border: 1px solid black; */
+    /* background: yellow; */
+    margin-top: 10px;
+    height: 70vh;
+}
+
+/* styling of counting of question no. */
+.qCount {
+    border: 1px solid rgb(245, 110, 110);
+    background: rgb(50, 37, 37);
+    border-radius: 50%;
+    color: wheat;
+    width: 75px;
+    height: 75px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* slection background of question whitch is behind of p tag */
+.question {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(215, 205, 228);
+    border-radius: 10px;
+    margin: 3px 100px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 25%; */
+    font-size: 1.4rem;
+}
+
+/* styling p tag of questions */
+.question p {
+    /* border: 3px solid rgb(69, 68, 68); */
+    /* background-color: rgb(238, 234, 243); */
+    border-radius: 10px;
+    padding: 45px 30px;
+    font-weight: 550;
+    height: 160px;
+}
+
+/* slection background of option button tag whitch is behind of .choiceClass */
+.option {
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* background-color: rgb(163, 131, 109); */
+    margin: 2px 100px;
+    height: 170px;
+    display: grid;
+    grid-template-columns: 38% 38%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling choice option only */
+.choiceClass {
+    background-color: rgb(114, 212, 215);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    width: 80%;
+    margin: 0px 20px 0px;
+    padding: 15px;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    cursor: pointer;
+}
+
+/* appling hover effect when move cursur on options */
+.choiceClass:hover {
+    background-color: rgb(132, 164, 233);
+}
+
+/* appling selected class when clicked on any option through js */
+.choiceClass.selected {
+    background-color: rgb(64, 89, 231);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+}
+
+/* selecting nextbtn div for checking layout of button only for checking */
+.Nextbtn {
+    /* background-color: rgb(209, 42, 0); */
+    /* border: 1px solid rgb(0, 0, 0); */
+    margin: 5px 100px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* stying next button only */
+.NextOther {
+    background-color: rgb(30, 63, 39);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(245, 197, 197);
+    border-radius: 8px;
+    margin: 5px 0;
+    margin-left: -45px;
+    padding: 10px 27%;
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    letter-spacing: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* appling hover effect when move cursur on next button */
+.NextOther:hover {
+    background-color: rgb(0, 99, 27);
+    color: rgb(249, 241, 241);
+
+}
+
+/* ==========//////??????????? */
+.container1 {
+    display: none;
+}

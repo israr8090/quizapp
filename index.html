@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestBook-Quiz</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+
+<body>
+    <!-- Creating a container which have 2 sections (1-user details)&(select category) -->
+    <div class="container">
+        <!-- ----------THis is first section for=user-details-section------------ -->
+        <div class="user-details-section">
+            <!-- Inserting logo in center -->
+            <img src="testbook-logo.png" alt="testbook-logo" width="90px">
+
+            <!-- A h1 tag for hello -->
+            <h1>Hello User!</h1>
+
+            <!-- fot asking nama of user  -->
+            <p class="hide">Enter your name to continue the Quiz.</p>
+
+            <!-- creating a div which have input tag and ancar tag with button tag -->
+            <div class="input-text-btn hide2 ">
+                <input type="text" id="name" class="userName" placeholder="ENTER YOUR NAME..." required>
+                <button id="enterClick"  class="userBtn">Enter</button>
+            </div>
+
+            <!-- created a dov for showing when user enter name and click Enter button -->
+            <div class="showusername">
+                <h2 id="showName">Israr</h2>
+                <h2>Let's start your Test</h2>
+                <button id="reEnterName">Do you want to change name?</button>
+            </div>
+
+        </div>
+
+        <!-- ----------THis is second section for=select-category-section----------- -->
+        <div class="select-category-section">
+
+            <!-- created h1 tag for showing text -->
+            <h1>Select Category</h1>
+
+            <!-- created a div which cantain button tag for 4 options -->
+            <div class="topic">
+                <button id="pipeCistern" class="choiceClass">Pipes And Cistern</button>
+                <button id="probability" class="choiceClass">Probability</button>
+                <button id="age" class="choiceClass">Problem On Age</button>
+                <button id="profitLoss" class="choiceClass">Profit And Loss</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
