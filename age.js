@@ -210,7 +210,6 @@ nextOther.addEventListener('click', () => {
     ////for changing next button into submit button-------------
     if (currentQuestionIndex == age.length-1) {
         nextOther.textContent = "Submit"
-        scores++
         
         //=======for showing result Report container1============================
         nextOther.addEventListener('click',()=>{
