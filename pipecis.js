@@ -77,12 +77,12 @@ const pipes = [
 ////---------------------------------------------------------------------------
 
 ////creating eventListener on retunIndexPage button for return home(index.html)page=====================
-retunIndexPage.addEventListener('click', ()=>{
+retunIndexPage.addEventListener('click', () => {
     let check2 = confirm("Are you Confirm to exit Test!");
-    if(check2 == true){
-     console.log("ture");
-     window.open('/index.html', '_self');
-    }; 
+    if (check2 == true) {
+        console.log("ture");
+        window.open('/index.html', '_self');
+    };
 });
 
 ////--Creating Function for storing time when a question 1 id displayed=================================
@@ -200,7 +200,7 @@ nextOther.addEventListener('click', () => {
 
     checkAnwser();      //called here checkAnswer because of checking when clicked next button--------
 
-  //Condition for increasing array index, showQuestion & questionNumber function calling when clicked next button---
+    //Condition for increasing array index, showQuestion & questionNumber function calling when clicked next button---
     if (currentQuestionIndex < pipes.length) {
         currentQuestionIndex++;
         showQuestion();
@@ -208,22 +208,22 @@ nextOther.addEventListener('click', () => {
     };
 
     ////for changing next button into submit button-------------
-    if (currentQuestionIndex == pipes.length-1) {
+    if (currentQuestionIndex == pipes.length - 1) {
         nextOther.textContent = "Submit"
         scores++
-        
+
         //=======for showing result Report container1============================
-        nextOther.addEventListener('click',()=>{
+        nextOther.addEventListener('click', () => {
             // console.log('click');
             container.style.display = 'none'
             container1.style.display = 'block';
             correctAnswer();
             showTotalQues();
+            wrongAnser();
             showpercentage();
-
             ////--Calling endQuiz Function for storing time of last question submitted-------------
-            endQuiz(); 
-        })
+            endQuiz();
+        });
     };
 
     //for Inserting scores of answer in HTML-----
@@ -233,37 +233,45 @@ nextOther.addEventListener('click', () => {
 ////================SOME FUNCTION FOR CONTAINER1========/////==================
 
 ////--Creating a Function for show total question when shown report container=============
-const showTotalQues=()=>{
+const showTotalQues = () => {
     const questionCount = pipes.length;
-    totalQuestion.textContent =`Total Question : ${questionCount}`;
+    totalQuestion.textContent = `Total Question : ${questionCount}`;
 };
 
 ////--Creating a Function for shown percentage in report container----=====================
-const showpercentage = ()=>{
-    const calculatePercentage = (scores/pipes.length)*100;
+const showpercentage = () => {
+    const calculatePercentage = (scores / pipes.length) * 100;
     percentage.textContent = `Percentage : ${calculatePercentage}%`;
 }
 
 //Function for print correct answer in report============
-const correctAnswer =()=>{
+const correctAnswer = () => {
     console.log(scores);
-    correctAns.textContent= `Correct : 0${scores}`;
+    correctAns.textContent = `Correct : 0${scores}`;
 };
 
 ////Adding an event listener for redirect start again test from starting  when clicked Start Again========
-startAgain.addEventListener('click', ()=>{
+startAgain.addEventListener('click', () => {
     var check2 = confirm("Do you want to start Again!");
-    if(check2 == true){
-     console.log("ture");
-     window.open('/pipecictern.html', '_self');
-    }; 
+    if (check2 == true) {
+        console.log("ture");
+        window.open('/pipecictern.html', '_self');
+    };
 });
 
 ////--Adding an event listener for redirect to index.html page=======================================
-goToHome.addEventListener('click', ()=>{
+goToHome.addEventListener('click', () => {
     var check2 = confirm("Are you Confirm!");
-    if(check2 == true){
-     console.log("ture");
-     window.open('/index.html', '_self');
-    }; 
+    if (check2 == true) {
+        console.log("ture");
+        window.open('/index.html', '_self');
+    };
 });
+
+////--Creating a Fucntion for calculation wrong answer================================================
+const wrongAnser = () => {
+    const wrongAns = pipes.length - scores;
+    totalWrongAnswer.textContent = `Wrong : 0${wrongAns}`;
+};
+
+////============================End=============================/////

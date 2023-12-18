@@ -4,7 +4,6 @@ const pipeCistern = document.getElementById("pipeCistern");
 const probability = document.getElementById("probability");
 const age = document.getElementById("age");
 const profitLoss = document.getElementById("profitLoss");
-const buttonSelect = document.getElementById("pipeSistern");
 const showName = document.getElementById("showName");
 const selectCetegory = document.querySelector(".select-category-section");
 const topic = document.querySelector(".topic");
@@ -43,7 +42,7 @@ enterClick.addEventListener('click', () => {
 let flag1 = 0;  //creatign variable for passing in if condition---------------
 reEnterName.addEventListener('click', () => {
     if (flag1 = 1) {
-        hide.style.display = 'block'
+        hide.style.display = 'block'        
         hide2.style.display = 'flex'
         showusername.style.display = 'none'
         selectCetegory.style.display = 'none'
@@ -51,6 +50,7 @@ reEnterName.addEventListener('click', () => {
 });
 
 ////=============CREATING EVENT LISTENER FOR ALL 4 OPTION SEPRATELY=======================/////////
+
 ////for first option-----------------------------
 pipeCistern.addEventListener('click', () => {
         var check2 = confirm("Are you Confirm!");
@@ -59,6 +59,7 @@ pipeCistern.addEventListener('click', () => {
         window.open('/pipecictern.html', '_self');
        };
 });
+
 ////for second option-----------------------------
 probability.addEventListener('click', () => {
     var check2 = confirm("Are you Confirm!");
@@ -67,6 +68,7 @@ probability.addEventListener('click', () => {
         window.open('/probability.html', '_self');
        };
 });
+
 ////for Thired option-----------------------------
 age.addEventListener('click', () => {
     var check2 = confirm("Are you Confirm!");
@@ -75,6 +77,7 @@ age.addEventListener('click', () => {
      window.open('/age.html', '_self');
     }; 
 });
+
 ////for Forth option-----------------------------
 profitLoss.addEventListener('click', () => {
     var check2 = confirm("Are you Confirm!");
@@ -85,22 +88,26 @@ profitLoss.addEventListener('click', () => {
 });
 ////===================/////////========================////////////
 
-////created functions for all button tags witch is toggled selected class================================
+////created a functions for all button tags witch is toggled selected class================================
+
 ////for 1st option--------------------------------------------
 function topicSection1() {
     const pipeSistern = document.getElementById('pipeSistern');
     var a = pipeSistern.classList.toggle("selected");
 };
+
 ////for 2nd option--------------------------------------------
 function topicSection2() {
     const probability = document.getElementById('probability');
     probability.classList.toggle("selected");
 };
+
 ////for 3rd option--------------------------------------------
 function topicSection3() {
     const age = document.getElementById('age');
     age.classList.toggle("selected");
 };
+
 ////for 4th option--------------------------------------------
 function topicSection4() {
     const profitLoss = document.getElementById('profitLoss');

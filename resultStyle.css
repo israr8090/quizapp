@@ -1,5 +1,7 @@
+/* ============importing url for google font appling in styling================================= */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&display=swap');
 
+/* for before styling all margin and padding makign 0 */
 * {
     margin: 0;
     padding: 0;
@@ -7,12 +9,14 @@
     font-family: 'Kanit', sans-serif;
 }
 
+/* Appling styling for container1 */
 .container1 {
     border: 1px solid black;
     background: linear-gradient(20deg, rgb(188, 121, 121), rgb(170, 243, 170), rgb(174, 174, 61));
     height: 100vh;
 }
 
+/* styling for header1 witch have heading   */
 .header1 {
     background: rgb(229, 214, 204);
     border: 1px solid rgb(192, 185, 185);
@@ -23,6 +27,7 @@
     font-size: 1.5rem;
 }
 
+/* styling for quizReport class witch is a div where all h2 tag present */
 .quizReport {
     background: rgb(226, 239, 238);
     border: 1px solid black;
@@ -33,10 +38,12 @@
     padding: 5px;
 }
 
+/* styling only h2 in quizReport class */
 .quizReport-h2 {
     padding: 10px
 }
 
+/* styling btn div witch have two buttons */
 .btn {
     /* border: 1px solid black; */
     /* background: rgb(50, 63, 205); */
@@ -46,6 +53,7 @@
     padding: 5px;
 }
 
+/* styling buttons  */
 .btn-button {
     border: 1px solid black;
     border-radius: 10px;
@@ -57,22 +65,26 @@
     font-size: 1rem;
     cursor: pointer;
 }
+
+/* appling hover effects */
 .btn-button:hover{
     border: 1px solid black;
     border-radius: 10px;
     background: rgb(239, 227, 227);
     color: rgb(32, 16, 16);
-   
 }
 
-/* ==================mediaquery================ */
+/* ===========Appling=======mediaquery==(Max-width=700)============== */
 @media only screen and (max-width: 700px) {
+    /* for header class div */
     .header1 {
         width: 90%;
         text-align: center;
         margin: 45px auto;
         
     }
+
+    /* for quizReprot class div */
     .quizReport {
         background: rgb(226, 239, 238);
         border: 1px solid black;
@@ -82,10 +94,14 @@
         text-align: center;
         padding: 5px;
     }
+
+    /* only for h2 tag of quizReport class div */
     .quizReport-h2 {
         font-size: 1.3rem;
         padding: 10px
     }
+
+    /* for btn class div */
     .btn {
         /* border: 1px solid black; */
         /* background: rgb(50, 63, 205); */
@@ -94,9 +110,13 @@
         text-align: center;
         padding: 30px;
     }
+
+    /* styling for buttons witch is in btn class div */
     .btn-button {
         width: 95%;
         padding: 10px 30px;
         margin: 11px auto;
     }
 }
+
+/* ====================End========================== */

@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- created a container which conatain all div and all contents -->
-    <div class="container">
+    <div class= "container">
 
         <!-- created a header for showing only subject topic on center-top -->
         <div class="header">
@@ -44,21 +44,41 @@
         </div>
     </div>
 
+    <!-- =============Making Second container for showing quizReport============================== -->
     <div class="container1">
+
+        <!-- A header witch have a text shown h1 tag content -->
         <div class="header1">
             <h1>Quiz Result</h1>
         </div>
+
+        <!-- Making  a div witch have many h2 tags for showing information for quizReport -->
         <div class="quizReport">
+            <!-- showes a text for user understanding -->
             <h2 id="showNameInReport" class="quizReport-h2">Your Result is :</h2> 
+
+            <!-- showes time taken by user doring test -->
             <h2 id="timeTakenDisplay" class="quizReport-h2"></h2>
+
+            <!-- showes total question in sum -->
             <h2 id="totalQuestion" class="quizReport-h2"></h2>
-            <h2 id="totalAttemtedQuestion" class="quizReport-h2">Attempt : 00</h2>
+
+            <!-- showes how many correct answer done -->
             <h2 id="correctAns" class="quizReport-h2">Correct : 00</h2>
+
+            <!-- showes total wrong answer in number -->
             <h2 id="totalWrongAnswer" class="quizReport-h2">Wrong : 00</h2>
+
+            <!-- showes got percentage in quiz -->
             <h2 id="percentage" class="quizReport-h2">Percentage : 00%</h2>
         </div>
+
+        <!-- Making a btn class div witch have 2 button -->
         <div class="btn">
+            <!-- this button is for redirect to start again quiz -->
             <button id="startAgain" class="btn-button">Start Again</button>
+            
+            <!-- this button is for redirect to index.html page -->
             <button id="goToHome" class="btn-button">Go To Home</button>
         </div>
     </div>

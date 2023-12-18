@@ -220,6 +220,7 @@ nextOther.addEventListener('click', () => {
             container1.style.display = 'block';
             correctAnswer();
             showTotalQues();
+            wrongAnser();
             showpercentage();
 
             ////--Calling endQuiz Function for storing time of last question submitted-------------
@@ -268,3 +269,11 @@ goToHome.addEventListener('click', ()=>{
      window.open('/index.html', '_self');
     }; 
 });
+
+////--Creating a Fucntion for calculation wrong answer================================================
+const wrongAnser = () => {
+    const wrongAns = profitLoss.length - scores;
+    totalWrongAnswer.textContent = `Wrong : 0${wrongAns}`;
+};
+
+////============================End=============================/////

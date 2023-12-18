@@ -1,5 +1,7 @@
+/* ============importing url for google font appling in styling================================= */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&display=swap');
 
+/* for before styling all margin and padding makign 0 */
 * {
     margin: 0;
     padding: 0;
@@ -206,13 +208,17 @@
 
 }
 
-/* ==========//////??????????? */
+/* ========Appling display none because of its done by JAVAScript====== */
 .container1 {
     display: none;
 }
 
+/* ==================mediaquery for (Max-widh= 700)================ */
+
 /* ==================mediaquery================ */
 @media only screen and (max-width: 700px) {
+
+    /* styling for header class */
     .header {
         /* border: 1px solid black; */
         /* background: rgb(205, 50, 104); */
@@ -220,15 +226,18 @@
         flex-direction: column;
     }
 
+    /* styling for h1 tag */
     .header h1 {
         font-size: 2rem;
         margin: 5px;
     }
 
+    /* styling for back button */
     .returnHome {
         position: static;
     }
 
+    /* styling for score Timer div */
     .scoreTimer {
         /* border: 1px solid black; */
         /* background: rgb(205, 50, 192); */
@@ -236,6 +245,7 @@
         height: 8%;
     }
 
+    /* styling for timer */
     .timer {
         border: 1px solid rgb(93, 2, 2);
         background: rgb(241, 175, 184);
@@ -247,6 +257,7 @@
         margin-top: 10px;
     }
 
+    /* styling for score */
     .score {
         float: right;
         margin-right: 20px;
@@ -254,6 +265,7 @@
         font-size: 1.5rem;
     }
 
+    /* styling for question div */
     .question {
         border: 2px solid rgb(0, 0, 0);
         background-color: rgb(215, 205, 228);
@@ -266,6 +278,7 @@
         height: 50%;
     }
 
+    /* styling for question p tag */
     .question p {
         /* border: 3px solid rgb(69, 68, 68); */
         /* background-color: rgb(238, 234, 243); */
@@ -276,9 +289,13 @@
         /* font-weight: 550; */
         /* height: 223px; */
     }
+
+    /* styling for relative for making qCount position absulute */
     .question-section{
         position: relative;
     }
+
+    /* styling question count  */
     .qCount {
         width: 60px;
         height: 60px;
@@ -292,6 +309,7 @@
         z-index: 1;
     }
 
+    /* styling for option div  */
     .option {
         /* border: 2px solid rgb(0, 0, 0); */
         /* background-color: rgb(163, 131, 109); */
@@ -303,6 +321,7 @@
         justify-content: center;
     }
 
+    /* styling for 4 option button only */
     .choiceClass {
         background-color: rgb(114, 212, 215);
         border: 1px solid rgb(0, 0, 0);
@@ -314,6 +333,8 @@
         /* font-weight: 600; */
         cursor: pointer;
     }
+
+    /* styling for next button div */
     .Nextbtn {
         /* background-color: rgb(209, 42, 0); */
         /* border: 1px solid rgb(0, 0, 0); */
@@ -322,9 +343,13 @@
         justify-content: center;
         align-items: center;
     }
+
+    /* styling for only next Button */
     .NextOther {
         margin: 5px 20px;
         padding: 7px 90px;
         font-size: 1.1rem;
     }
 }
+
+/* ===================End======================== */

@@ -1,5 +1,7 @@
+/* ==========importing url for using google fonts=========== */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,300&display=swap');
 
+/* for before styling all margin and padding makign 0 */
 * {
     margin: 0;
     padding: 0;
@@ -81,6 +83,7 @@
     font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 550;
+    cursor: pointer;
 }
 
 /* styling for Enter button hover effect */
@@ -130,6 +133,7 @@
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 /* styling for appling hover effect on option button */
@@ -162,7 +166,7 @@
     text-align: center;
 }
 
-/* styling for reEnter Name shown when clicked Enter */
+/* Accessing by ID, styling for reEnter Name shown when clicked Enter */
 #reEnterName {
     background: rgb(8, 8, 8);
     border: 1px solid rgb(232, 227, 227);
@@ -174,6 +178,7 @@
     margin-top: -95px;
 }
 
+/* Accessing by Id for appling hover effect on back button */
 #reEnterName:hover {
     background: rgb(248, 75, 59);
     border: 1px solid black;
@@ -181,8 +186,12 @@
 }
 /* ++++++++++++++=============================+++++++++++++++++++++++++ */
 
-/* ==================mediaquery================ */
+/* =======Appling mediaquery for making responcive================ */
+
+/* =======Appling mediaquery for (max-widht=625px)=============== */
 @media only screen and (max-width: 625px) {
+
+    /* styling for Back button */
     #reEnterName {
         padding: 5px 5px;
         font-size: 0.7rem;
@@ -190,22 +199,32 @@
         /* top: 17px; */
         right: 10px;
     }
+
+    /* styling for font size of p tag */
     .hide{
         /* background: red; */
         font-size: 1.5rem;
     }
+
+    /* styling for div of input & Button */
     .input-text-btn{
         display: flex;
         flex-direction: column;
         margin: 20px;
     }
+
+    /* styling for input tag */
     .input-text-btn input {
         border: 1px solid #ccc;
         width: 80%;
     }
+    
+    /* styling for Enter button */
     .input-text-btn button {
         width: 80%;
     }
+
+    /* stying for topic div witch have 4 option button */
     .topic {
         /* border: 2px solid rgb(0, 0, 0); */
         /* background-color: rgb(222, 37, 204); */
@@ -218,13 +237,20 @@
         align-items: center;
         justify-content: center;
     }
+
+    /* styling for 4 option button */
     .choiceClass {
         width: 90%;
     }
 }
+
+/* =======Appling mediaquery for (max-widht=425px)=============== */
 @media only screen and (max-width: 425px) {
+    /* styling for only making text in center */
     .hide{
         /* background: rgb(7, 99, 16); */
         text-align: center;
     }
 }
+
+/* ////============================End=============================///// */
