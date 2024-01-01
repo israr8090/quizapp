@@ -32,10 +32,10 @@ enterClick.addEventListener('click', () => {
             hide.style.display = 'none'
             hide2.style.display = 'none'
         } else if (check1 == false) {
-            name == " ";
             console.log(name);
         };
     };
+    document.getElementById("name").value= "";
 });
 
 ////Creating EventListener for reEnter Button for come back to input tag for re-entering name-------
